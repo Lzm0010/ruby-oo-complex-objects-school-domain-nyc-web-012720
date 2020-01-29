@@ -22,7 +22,7 @@ class School
   
   def sort
     @roster.each_pair{|grade, students|
-      students.sort
+      @roster[grade] = students.sort
     }
   end
 
